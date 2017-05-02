@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11837,7 +11837,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11964,7 +11964,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12056,11 +12056,11 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x8cc70d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x96a0310&gt;</pre>
 </div>
 
 </div>
@@ -12530,7 +12530,7 @@ Type of Establishment: This looks like a super market.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12602,7 +12602,7 @@ Type of Establishment: This looks like a super market.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 I actually tried all the features , and the prediction score is following.</p>
-<h1 id="Fresh--1.05">Fresh -1.05<a class="anchor-link" href="#Fresh--1.05">&#182;</a></h1><h1 id="Milk-0.57">Milk 0.57<a class="anchor-link" href="#Milk-0.57">&#182;</a></h1><h1 id="Grocery-0.57">Grocery 0.57<a class="anchor-link" href="#Grocery-0.57">&#182;</a></h1><h1 id="Frozen--3.0427">Frozen -3.0427<a class="anchor-link" href="#Frozen--3.0427">&#182;</a></h1><h1 id="Detergents_Paper-0.7634">Detergents_Paper 0.7634<a class="anchor-link" href="#Detergents_Paper-0.7634">&#182;</a></h1><h1 id="Delicatessen--0.28">Delicatessen -0.28<a class="anchor-link" href="#Delicatessen--0.28">&#182;</a></h1><p>It clearly shows "Detergents_Paper" fetaure is only predictable expenditure of the customer other features has not performed well.</p>
+<h1 id="Fresh--1.05">Fresh -1.05<a class="anchor-link" href="#Fresh--1.05">&#182;</a></h1><h1 id="Milk-0.57">Milk 0.57<a class="anchor-link" href="#Milk-0.57">&#182;</a></h1><h1 id="Grocery-0.57">Grocery 0.57<a class="anchor-link" href="#Grocery-0.57">&#182;</a></h1><h1 id="Frozen--3.0427">Frozen -3.0427<a class="anchor-link" href="#Frozen--3.0427">&#182;</a></h1><h1 id="Detergents_Paper-0.7634">Detergents_Paper 0.7634<a class="anchor-link" href="#Detergents_Paper-0.7634">&#182;</a></h1><h1 id="Delicatessen--0.28">Delicatessen -0.28<a class="anchor-link" href="#Delicatessen--0.28">&#182;</a></h1><p>It clearly shows "Detergents_Paper" fetaure is only predictable expenditure ,the R2 score is 0.7634 for Detergents_Paper,that means with other feature Detergents_Paper can be predicted well and the 76.34% verrience can be explained by this model.As "Detergents_Paper" is predictable by other features in the model hence we will not gain much from "Detergents_Paper" feature for clutering.</p>
 
 </div>
 </div>
@@ -12619,7 +12619,7 @@ I actually tried all the features , and the prediction score is following.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -15581,6 +15581,104 @@ QgghhBBSa/8DZEVmzYtZEcYAAAAASUVORK5CYII=
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;pearson&#39;</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Fresh</th>
+      <td>1.000000</td>
+      <td>0.100510</td>
+      <td>-0.011854</td>
+      <td>0.345881</td>
+      <td>-0.101953</td>
+      <td>0.244690</td>
+    </tr>
+    <tr>
+      <th>Milk</th>
+      <td>0.100510</td>
+      <td>1.000000</td>
+      <td>0.728335</td>
+      <td>0.123994</td>
+      <td>0.661816</td>
+      <td>0.406368</td>
+    </tr>
+    <tr>
+      <th>Grocery</th>
+      <td>-0.011854</td>
+      <td>0.728335</td>
+      <td>1.000000</td>
+      <td>-0.040193</td>
+      <td>0.924641</td>
+      <td>0.205497</td>
+    </tr>
+    <tr>
+      <th>Frozen</th>
+      <td>0.345881</td>
+      <td>0.123994</td>
+      <td>-0.040193</td>
+      <td>1.000000</td>
+      <td>-0.131525</td>
+      <td>0.390947</td>
+    </tr>
+    <tr>
+      <th>Detergents_Paper</th>
+      <td>-0.101953</td>
+      <td>0.661816</td>
+      <td>0.924641</td>
+      <td>-0.131525</td>
+      <td>1.000000</td>
+      <td>0.069291</td>
+    </tr>
+    <tr>
+      <th>Delicatessen</th>
+      <td>0.244690</td>
+      <td>0.406368</td>
+      <td>0.205497</td>
+      <td>0.390947</td>
+      <td>0.069291</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -15598,9 +15696,10 @@ QgghhBBSa/8DZEVmzYtZEcYAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>1.Yes,The plot above shows some correaltion between "Grocery" and "Detergents_Paper". 
-2.It confirms, we have seen "Detergents_Paper" fiting in the data model with 0.76 score , here we observed it correlates with the milk purchase data.
-3.Most of the data point is closed to 0 , the must be right skewed.</p>
+<p>1.Yes,The plot above shows some correaltion between "Grocery" and "Detergents_Paper",also "Milk" shows mild correlation with
+"Detergents_Paper" and "Grocery".</p>
+<p>2.It confirms, we have seen "Detergents_Paper" fiting in the data model with 0.76 score , here we observed it correlates with the milk purchase data.</p>
+<p>3.Most of the data point is closed to 0 , the must be right skewed.</p>
 
 </div>
 </div>
@@ -15632,7 +15731,7 @@ QgghhBBSa/8DZEVmzYtZEcYAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -21437,7 +21536,7 @@ AAAAEDAEPgAAAAAAAAFD4AMAAAAAABAwvwDOO+o5qaF1jgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -21528,7 +21627,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">all_outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>
@@ -22234,7 +22333,7 @@ List of data points considered outliers for more than one feature: [ 65  66  75 
 </li>
 <li><p>This data points should be removed.</p>
 </li>
-<li><p>These data points are unsual in repective to the other data points hence presence of these data points will effect model prediction negatively.</p>
+<li><p>These data points are unsual in repective to the other data points ,presence of these outliners actually making the data set right skewd where as clutering algorithm like KMeans works on the data assuming that the data is normaly distrubuted.Hence clutering in presence of these outliners will effect the prediction negatively.</p>
 </li>
 </ol>
 
@@ -22268,7 +22367,7 @@ List of data points considered outliers for more than one feature: [ 65  66  75 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -22280,6 +22379,8 @@ List of data points considered outliers for more than one feature: [ 65  66  75 
 
 <span class="c1"># Generate PCA results plot</span>
 <span class="n">pca_results</span> <span class="o">=</span> <span class="n">vs</span><span class="o">.</span><span class="n">pca_results</span><span class="p">(</span><span class="n">good_data</span><span class="p">,</span><span class="n">pca</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">pca_results</span><span class="p">[</span><span class="s1">&#39;Explained Variance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -22289,6 +22390,19 @@ List of data points considered outliers for more than one feature: [ 65  66  75 
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dimension 1    0.4430
+Dimension 2    0.7068
+Dimension 3    0.8299
+Dimension 4    0.9311
+Dimension 5    0.9796
+Dimension 6    1.0000
+Name: Explained Variance, dtype: float64
+</pre>
+</div>
+</div>
 
 <div class="output_area"><div class="prompt"></div>
 
@@ -22999,12 +23113,20 @@ QmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <ol>
-<li>1st component explained 44.70% and second component explained 27.46% ,in total it explains 72.16% variance.</li>
-<li>A.The 1st component heavily relay on the weitage of "Fresh" and "Delicatessen"
-B.In the seond component all the initial feature has negative weitage.
-C.In the third component "Delicatessen" has the major weight in it.
-D.In the forth component "Frozen" and "Detergent paper" is the diving feature</li>
+<li><p>1st component explained 44.30% and second component explained 26.38% ,in total it explains 70.68% variance.</p>
+</li>
+<li><p>first four principal components in total explains 93.11% of varience.</p>
+</li>
 </ol>
+<p>3.Discussion on first four dimension</p>
+<p>A.Dimension 1 :</p>
+<p>The 1st dimesion strogly correlate with the "Detergent paper","grocery" and "Milk".That is,dimesion 1 increases with the decreases in these three feature purchase.This could be those establishment where we don't need "Detergent paper","grocery" and "Milk", may be a small resutrent which serves Peter Ardito dishes.</p>
+<p>A.Dimension 2</p>
+<p>The 2nd dimesion strogly correlate with the "Fresh","Frozen" and "Deli".That is,dimesion 2 increases with the decreases in these three feature purchase.This could be those establishment where we don't need "Fresh","Frozen" and "Deli", may be a small grocery store.</p>
+<p>C.Dimension 3</p>
+<p>The 3rd dimesion strogly correlate with the "Fresh" and "Deli".That is,dimesion 3 increases with the increase in these "Fresh" and "Deli" purchase,However the dimesion inversely correlate with "Frozen" food purchase.This could be a small Veg-restaurant.</p>
+<p>D.Dimension 4</p>
+<p>The 4th dimesion strogly correlate with the "Frozen".That is,dimesion 4 increases with the increase in Frozen purchase.This can be retailer of frozen food.</p>
 
 </div>
 </div>
@@ -25075,6 +25197,8 @@ AAAAAABMg7ILAAAAAAAApkHZBQAAAAAAANP4P0csiqm5K17tAAAAAElFTkSuQmCC
 </li>
 <li><p>Easy to interpret and Implement.</p>
 </li>
+<li><p>This is a hard clutering technique,where each data point can be assigned to only one cluster.</p>
+</li>
 </ol>
 <p>Advantages of Gaussian Mixture:</p>
 <ol>
@@ -25082,8 +25206,10 @@ AAAAAABMg7ILAAAAAAAApkHZBQAAAAAAANP4P0csiqm5K17tAAAAAElFTkSuQmCC
 </li>
 <li><p>Does not bias the cluster sizes to have specific structures as does by K-Means (Circular).</p>
 </li>
+<li><p>This is a soft/fuzzy clutering technique,where each data point can be assigned to more then one cluster hence overlap can happen.</p>
+</li>
 </ol>
-<p>In this case , I will be using K-means clutering algorithm as this is more of a general purpose algorithm.</p>
+<p>In this case , I will be using K-means clutering algorithm as this is more of a general purpose algorithm,also considering speed and hard clustering technique we will use KMeans for this project.</p>
 
 </div>
 </div>
@@ -26583,6 +26709,18 @@ Segemnt 0 :</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Intution-based-prediction-of-segments-for-Sample-points">Intution based prediction of segments for Sample points<a class="anchor-link" href="#Intution-based-prediction-of-segments-for-Sample-points">&#182;</a></h3><p>Sample point zero (Index 60): This index has very less frozen item this may fall into the segemnt 0</p>
+<p>Sample point 1 (Index 110):This index has low purchase of Milk,grocery where as Fresh and Frozen is high,this is clearly going to fall into the category of segment 1.</p>
+<p>Sample point 2 (Index 200): This is index has very high purchase of Milk , Grocery ,Detergents paper it is part of segment 0.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
@@ -26620,7 +26758,9 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Sample point zero (Index 60): Initally I predicted it as a big dine in resutrent but here it fall into the supermarket category.</p>
+<p>What we predicted intuitively is correct , the reason for the same is discussed previously.</p>
+<p>comparison to the conjectures made in Question 1:</p>
+<p>Sample point zero (Index 60): Initally I in Q1 predicted it as a big dine in resutrent but here it fall into the supermarket category.</p>
 <p>Sample point 1 (Index 110):Initally I predicted it as a small resutrent here also in fall in the same category.</p>
 <p>Sample point 2 (Index 200):Initally I predicted it as a big dine in resutrent here also in fall in the same category.</p>
 
@@ -26688,7 +26828,7 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-As we have discussed the feature "Fresh" and "frozen" are high in segmnet 1 and other feature are high in segment 0 , while getting estimation from our new customers if we check the same pattern we can label them in the either of the segment and accordingly decied on the delivery system.</p>
+Post the clutering now we have a label data set,now we can use supervised learning algorithms to predict the segment of the new customers on the basis of feature purchase estimation given by the new customer.</p>
 
 </div>
 </div>
@@ -28100,6 +28240,19 @@ LOQ/8tgoujoVqGUAAAAASUVORK5CYII=
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
