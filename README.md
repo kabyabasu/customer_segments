@@ -4,4 +4,4 @@ In this project, we will analyze a dataset containing data on various customers'
 
 The dataset for this project can be found on the UCI Machine Learning Repository. For the purposes of this project, the features 'Channel' and 'Region' will be excluded in the analysis — with focus instead on the six product categories recorded for customers.
 
-This is a part of MLND project
+This is a part of MLND project.
